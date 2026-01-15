@@ -237,6 +237,8 @@ img {
   min-width: 169px;
   height: 56px;
 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -416,7 +418,7 @@ img {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
@@ -519,7 +521,7 @@ img {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
@@ -633,6 +635,7 @@ img {
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
+  padding: 72px 24px 488px 24px;
 
   transform: translate(-50%, -50%);
 
@@ -645,4 +648,22 @@ img {
 
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -50%) scale(1.5);
+}
+
+.modal-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.modal-close {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
 }

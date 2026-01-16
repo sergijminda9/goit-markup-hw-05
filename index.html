@@ -505,7 +505,7 @@
     <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close">
-          <svg class="" width="8" height="8">
+          <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
@@ -565,7 +565,27 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <button type="submit" disabled>Send</button>
+          <input
+            type="checkbox"
+            name="policy"
+            id="policy"
+            required
+            value="true"
+            class="modal-check visually-hidden"
+          />
+          <label for="policy" class="modal-check-label">
+            <span class="modal-check-label-span">
+              <svg class="modal-check-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg> </span
+            >I accept the terms and conditions of the
+            <a href="" class="modal-check-label-link">Privacy Policy</a>
+          </label>
+          <div class="modal-send-conteiner">
+            <button type="submit" class="modal-send">
+              <span class="modal-send-text">Send</span>
+            </button>
+          </div>
         </form>
       </div>
     </div>

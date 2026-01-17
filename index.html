@@ -63,7 +63,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-titel">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- ---------------------features-------------------- -->
@@ -498,13 +500,26 @@
           </ul>
         </div>
       </div>
+      <div class="footer-subscribe">
+        <p class="footer-subscribe-titel">Subscribe</p>
+
+        <form class="footer-form">
+          <input type="email" class="footer-input" placeholder="E-mail" />
+          <button type="submit" class="footer-button">
+            <span class="footer-buton-text">Subscribe</span>
+            <svg class="button-frame-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-frame"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </footer>
 
     <!------------------ MODAL ----------------->
 
-    <div class="backdrop is-open">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close">
+        <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
@@ -582,12 +597,13 @@
             <a href="" class="modal-check-label-link">Privacy Policy</a>
           </label>
           <div class="modal-send-conteiner">
-            <button type="submit" class="modal-send">
+            <button type="submit" class="modal-send hero-btn">
               <span class="modal-send-text">Send</span>
             </button>
           </div>
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -804,7 +804,7 @@ img {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
@@ -845,7 +845,6 @@ img {
 
 .modal-field {
   margin-bottom: 8px;
-  margin-top: 16px;
 }
 
 .modal-text-area {
@@ -862,7 +861,7 @@ img {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
@@ -872,7 +871,7 @@ img {
 }
 
 .modal-check-label-link {
-  line-height: 133%;
+  line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
@@ -920,4 +919,12 @@ img {
   text-align: center;
   color: #ffffff;
   text-align: center;
+}
+
+.modal-check-icon {
+  opacity: 0;
+}
+
+.modal-check:checked + .modal-check-label .modal-check-icon {
+  opacity: 1;
 }

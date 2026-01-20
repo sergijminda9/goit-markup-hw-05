@@ -521,7 +521,6 @@ img {
   display: flex;
   align-items: baseline;
   width: 100%;
-  gap: 120px;
 }
 
 .social-media {
@@ -607,6 +606,13 @@ img {
 
 .footer-social-icon {
   fill: #f4f4fd;
+}
+
+.footer-social-subscribe-conteiner {
+  flex-direction: row;
+  display: flex;
+  gap: 80px;
+  margin-left: 120px;
 }
 
 /* -------------------footer-subscribe------------------- */
@@ -800,6 +806,8 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+
+  margin-bottom: 16px;
 }
 
 .modal-lable {
